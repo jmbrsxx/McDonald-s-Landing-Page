@@ -1,0 +1,249 @@
+@import url("media query.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  color: white;
+  background-image: url("imagens/Background Image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  scale: 0.75;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-10px);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+header button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  color: white;
+  background-color: #00c6ff;
+  border-radius: 20px;
+  margin: 30px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+  transition: all 0.3s ease;
+}
+
+header button:hover {
+  background-color: #007bff;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px; /* optional */
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.burger {
+  padding: 20px;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
+.purchase-cart {
+  color: white;
+  background-color: black;
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6b00;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+
+
+footer:hover {
+  background-color: chocolate;
+}
+
+.cart-btn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.carrinho {
+  position: relative;
+  width: 60%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.cart-items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  flex-direction: column;
+}
+
+
+.preço-total {
+  font-weight: bold;
+}
+
+.endereço {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.endereço-input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+#address-warn {
+  color: red;
+  display: none;
+}
+
+.buttons {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Fechar {
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Finalizar {
+  background-color: limegreen;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.Finalizar:hover {
+  background-color: darkgreen;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.cart-item-info p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}

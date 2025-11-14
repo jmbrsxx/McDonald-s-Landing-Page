@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>McDonald's Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media%20query.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <img class="logo" src="imagens/mcdonalds logo.png" alt="mcdonalds icon">
+    <h1> McDonald's</h1>
+    <p>412 Maple Ridge Avenue, Asheville, North Carolina</p>
+    <button>Mon-Fri 6pm-10pm</button>
+  </header>
+  <div id="modal" class="modal">
+    <div class="carrinho">
+      <div class="title">
+          <h2>Meu Carrinho</h2>
+      </div>
+      <div id="cart-items" class="cart-items">
+      </div>
+      <p id="total-price" class="preço-total">Total: 0.00</p>
+      <p class="endereço">Endereço de entrega</p>
+      <input id="address-input" type="text" placeholder="Digite seu endereço completo..." class="endereço-input">
+      <p id="address-warn">*Type in a correct address</p>
+      <div class="buttons">
+        <button id="close-button" class="Fechar">Fechar</button>
+        <button id="checkout-btn" class="Finalizar">Finalizar Pedido</button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-container">
+    <section id="menu" class="menu">
+      <div class="hamburger">
+        <img src="imagens/hamburgers/big mac.jpg" alt="big mac">
+        <div class="burger">
+          <h2>Big Mac</h2>
+          <p>The original double-patty burger with special sauce, lettuce, cheese, pickles, and onions on a sesame seed triple-layer bun.</p>
+          <div class="price">
+            <h2>R$5,99</h2>
+            <button class="purchase-cart" data-name="Double Burger" data-price="5.99">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburger">
+        <img src="imagens/hamburgers/cheeseburger.jpg" alt="cheeseburger">
+        <div class="burger">
+          <h2>Cheeseburger</h2>
+          <p>A supersized version with four beef patties and extra special sauce for those who want maximum meat.</p>
+          <div class="price">
+            <h2>R$7,99</h2>
+            <button class="purchase-cart" data-name="Triple Burger" data-price="7.99">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburger">
+        <img src="imagens/hamburgers/double cheeseburger.jpg" alt="double cheeseburger">
+        <div class="burger">
+          <h2>Cheeseburger</h2>
+          <p>The classic, but topped with two strips of crispy bacon for a smoky twist.</p>
+          <div class="price">
+            <h2>R$6,49</h2>
+            <button class="purchase-cart" data-name="Triple Burger" data-price="6.49">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburger">
+        <img src="imagens/hamburgers/triple burger.jpg" alt="triple burger">
+        <div class="burger">
+          <h2>Triple Burger</h2>
+          <p>Swaps out the beef for two crispy chicken patties while keeping the same Big Mac build and flavor.</p>
+          <div class="price">
+            <h2>R$6,79</h2>
+            <button class="purchase-cart" data-name="Triple Burger" data-price="6.79">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburger">
+        <img src="imagens/hamburgers/triple burger.jpg" alt="triple burger">
+        <div class="burger">
+          <h2>Triple Burger</h2>
+          <p>Adds fresh tomato, extra cheese, and a thicker beef patty for a more premium feel.</p>
+          <div class="price">
+            <h2>R$7,29</h2>
+            <button class="purchase-cart" data-name="Triple Burger" data-price="7.29">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburger">
+        <img src="imagens/hamburgers/triple burger.jpg" alt="triple burger">
+        <div class="burger">
+          <h2>Triple Burger</h2>
+          <p>The special sauce gets a spicy kick, paired with pepper jack cheese and jalapeños for heat lovers.</p>
+          <div class="price">
+            <h2>R$6,59</h2>
+            <button class="purchase-cart" data-name="Triple Burger" data-price="6.59">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburger">
+        <img src="imagens/hamburgers/triple burger.jpg" alt="triple burger">
+        <div class="burger">
+          <h2>Triple Burger</h2>
+          <p>Made with two plant-based patties, vegan cheese, and dairy-free version of the special sauce.</p>
+          <div class="price">
+            <h2>R$6,99</h2>
+            <button class="purchase-cart" data-name="Triple Burger" data-price="6.59">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburger">
+        <img src="imagens/hamburgers/triple burger.jpg" alt="triple burger">
+        <div class="burger">
+          <h2>Triple Burger</h2>
+          <p>Includes sautéed mushrooms, Swiss cheese, and creamy garlic sauce added to the classic stack.</p>
+          <div class="price">
+            <h2>R$5.99</h2>
+            <button class="purchase-cart" data-name="Triple Burger" data-price="6.99">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <button id="cart-btn" class="cart-btn">
+      <h1><span id="cart-count">(0)</span> add to Cart</h1>
+    </button>
+  </footer>
+  <script src="javascript.js"></script>
+</body>
+</html>
