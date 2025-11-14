@@ -101,7 +101,7 @@ function updateCartModal() {
     cartItemsContainer.appendChild(cartItemElement);
   });
 
-  cartTotal.textContent = `Total: R$ ${total.toFixed(2)}`;
+  cartTotal.textContent = `Total: $ ${total.toFixed(2)}`;
 
   // Update cart counter
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
