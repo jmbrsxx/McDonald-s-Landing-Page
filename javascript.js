@@ -90,7 +90,7 @@ function updateCartModal() {
       <div class="cart-item-info">
         <p>${item.name}</p>
         <p>Qtd: ${item.quantity}</p>
-        <p>R$ ${(item.price * item.quantity).toFixed(2)}</p>
+        <p>$ ${(item.price * item.quantity).toFixed(2)}</p>
       </div>
       <div>
         <button class="remove-btn" data-name="${item.name}">Remover</button>
