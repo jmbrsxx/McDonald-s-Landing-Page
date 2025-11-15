@@ -40,11 +40,11 @@ header h1 {
   margin: 10px;
 }
 
-header button {
+#date-span {
   font-size: 1.5rem;
   padding: 10px 20px;
   color: white;
-  background-color: #00c6ff;
+  background-color: limegreen;
   border-radius: 20px;
   margin: 30px;
   border: none;
@@ -52,17 +52,36 @@ header button {
   transition: all 0.3s ease;
 }
 
-header button:hover {
-  background-color: #007bff;
+#date-span:hover {
+  cursor: pointer;
+  background-color: darkgreen;
 }
 
 .menu-container {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+#title {
+  align-self: center;
+}
+
+#drinks {
+  margin-top: 50px;
+  align-self: flex-start;
+  margin-left: 30px;
 }
 
 .menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hamburger-section {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px; /* optional */
@@ -82,6 +101,28 @@ header button:hover {
   display: flex;
   flex-direction: column;
 }
+
+.soda-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px; /* optional */
+}
+
+.soda {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 0;
+  padding: 10px;
+}
+
+.soda-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
 
 .price {
   display: flex;

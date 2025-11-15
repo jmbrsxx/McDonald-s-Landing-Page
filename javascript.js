@@ -123,7 +123,19 @@ checkoutBtn.addEventListener("click", function () {
 
   // Check if the cart is empty
   if (cart.length === 0) {
-    alert("Seu carrinho está vazio! Adicione itens antes de finalizar o pedido.");
+
+    Toastify({
+      text: "Unable to place order, the cart is empty",
+      duration: 3000,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "right", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "#ef4444",
+      },
+    }).showToast();
+
     return;
   }
 
@@ -143,7 +155,17 @@ checkoutBtn.addEventListener("click", function () {
 
   // If everything is okay:
   addressWarn.style.display = "none";
-  alert("Pedido confirmado! Obrigado pela compra :)");
+  Toastify({
+      text: "Thank you for the order, see you next time",
+      duration: 3000,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "right", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "green",
+      },
+    }).showToast();
 
   // Clear cart and reset UI
   cart = [];
@@ -151,3 +173,4 @@ checkoutBtn.addEventListener("click", function () {
   addressInput.value = "";
   cartModal.style.display = "none";
 });
+

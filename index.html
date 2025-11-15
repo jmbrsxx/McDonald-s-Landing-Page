@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>McDonald's Landing Page</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media%20query.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -13,7 +15,7 @@
     <img class="logo" src="imagens/mcdonalds logo.png" alt="mcdonalds icon">
     <h1> McDonald's</h1>
     <p>412 Maple Ridge Avenue, Asheville, North Carolina</p>
-    <button>Mon – Fri 6 PM – 10 PM</button>
+    <button id="date-span">Mon – Fri 6 PM – 10 PM</button>
   </header>
   <div id="modal" class="modal">
     <div class="carrinho">
@@ -33,7 +35,9 @@
     </div>
   </div>
   <div class="menu-container">
+    <h1 id="title">Menu</h1>
     <section id="menu" class="menu">
+      <div class="hamburger-section">
         <div class="hamburger">
     <img src="imagens/hamburgers/bigmac.jpg" alt="Big Mac">
     <div class="burger">
@@ -145,7 +149,38 @@
         </div>
     </div>
     </div>
+      </div>
 
+
+
+    <h1 id="drinks">Drinks</h1>
+
+    <div class="soda-section">
+        <div class="soda">
+          <img src="imagens/refris/coca cola.jpg" alt="Coca cola">
+        <div class="soda-description">
+          <h2>Coca Cola</h2>
+          <div class="price">
+          <h2>$9.99</h2>
+          <button class="purchase-cart" data-name="Coca Cola" data-price="9.99">
+              <i class="fa-solid fa-cart-plus"></i>
+          </button>
+        </div>
+    </div>
+    </div>
+        <div class="soda">
+    <img src="imagens/refris/guarana.png" alt="Guarana">
+    <div class="soda-description">
+        <h2>Guarana</h2>
+        <div class="price">
+        <h2>$7.99</h2>
+        <button class="purchase-cart" data-name="Guarana" data-price="7.99">
+            <i class="fa-solid fa-cart-plus"></i>
+        </button>
+        </div>
+    </div>
+    </div>
+      </div>
     </section>
   </div>
   <footer>
@@ -153,6 +188,7 @@
       <h1><span id="cart-count">(0)</span> Add to cart</h1>
     </button>
   </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="javascript.js"></script>
 </body>
 </html>

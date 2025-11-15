@@ -1,7 +1,19 @@
 @media (max-width: 768px) {
+
+  .hamburger-section {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px; /* optional */
+}
   .menu {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+  .soda-section {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px; /* optional */
 }
 
  .carrinho  {
